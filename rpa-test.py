@@ -84,6 +84,7 @@ def crm():
 def servicedesk():
     if request.method == 'POST':
         req_data = request.get_json()
+        print(req_data)
         try:
             tokenin = request.headers['token']
             cnpjin = req_data['cnpj']
