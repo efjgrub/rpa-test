@@ -115,7 +115,7 @@ def servicedesk():
             
             ret = {
                 "status": "Ticket criado",
-                "tiketTile": req_data['Problem'],
+                "ticketTitle": req_data['Problem'],
                 "id": id,
                 "date": d1
             }

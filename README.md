@@ -80,6 +80,6 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
     "date": "14/05/2020",
     "id": 29008,
     "status": "Ticket criado",
-    "tiketTile": "não consigo me logar"
+    "ticketTitle": "não consigo me logar"
 }
 ```
