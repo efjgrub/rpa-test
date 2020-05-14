@@ -9,3 +9,8 @@
   
     return saldo;
   };
+
+
+// tamanho de Array
+obj = JSON.parse(json);
+Object.size(obj.clients[0].pop_problem_list)
