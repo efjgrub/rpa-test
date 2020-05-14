@@ -18,9 +18,9 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 
 ### CRM
 
-**Endpoint de consulta** https://<host>/sample/crm/consulta
-**Método** POST
-**Authenticação** token no header
+**Endpoint de consulta** https://<host>/sample/crm/consulta<br>
+**Método** POST<br>
+**Authenticação** token no header<br>
 **Requisição JSON**
 ```json
 {
