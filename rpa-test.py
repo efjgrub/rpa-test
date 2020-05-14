@@ -44,7 +44,7 @@ def crm():
                     "status": "OK",
                     "Name": "Empresa de modelo 1",
                     "Logradouro": "Av. das americas, 2000",
-                    "Cidade": "Santa Fé",
+                    "Cidade": "Santana",
                     "Estado": "SP",
                     "debitos": []
             }
