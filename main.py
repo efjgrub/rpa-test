@@ -52,7 +52,7 @@ def crm():
         elif cnpjin == cnpjerr:
             ret = {
                     "cnpj": cnpjin,
-                    "status": "ERR",
+                    "status": "pendente",
                     "Name": "Empresa de modelo 2",
                     "Logradouro": "Av. europa, 1000",
                     "Cidade": "Santa falta de pagamento",

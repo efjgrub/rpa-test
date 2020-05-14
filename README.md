@@ -64,7 +64,7 @@ Dados para testes
             "valor": 20000
         }
     ],
-    "status": "ERR"
+    "status": "pendente"
 }
 ```
 ### SERVICE DESK
