@@ -18,7 +18,7 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 
 ### CRM
 
-**Endpoint de consulta** https://devsp.fortics.com.br/sample/crm/consulta<br>
+**Endpoint de consulta** https://edison-research.uc.r.appspot.com/sample/crm/consulta<br>
 **Método** POST<br>
 **Authenticação** token no header<br>
 **Requisição JSON**
@@ -64,7 +64,7 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 ```
 ### SERVICE DESK
 
-**Endpoint de consulta** https://devsp.fortics.com.br/sample/servicedesk/ticket<br>
+**Endpoint de consulta** https://edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
 **Método** POST<br>
 **Authenticação** token no header<br>
 **Requisição JSON**
