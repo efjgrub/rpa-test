@@ -16,6 +16,10 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 
 # Documentação das APIs de integração
 
+CNPJS válidos para testes
+* 99.999.999/0001-99 - CNPJ sem débitos
+* 99.999.999/0002-99 - CNPJ com débitos
+
 ### CRM
 
 **Endpoint de consulta** https://edison-research.uc.r.appspot.com/sample/crm/consulta<br>
