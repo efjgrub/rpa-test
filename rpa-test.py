@@ -89,10 +89,11 @@ def servicedesk():
             tokenin = request.headers['token']
             cnpjin = req_data['cnpj']
         except Exception as e:
+            err = f'"{e}"' 
             ret = {
                 "status": "denied",
                 "message": "Invalid parameters",
-                "Error": e
+                "Error": err
             }
             return(jsonify(ret))
         
