@@ -14,6 +14,9 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 * Se o cliente estiver com débitos, o sistema mostra a lista de débitos e nega a abertura de chamados.
 * Mostrar a soma de debitos também
 
+# Fluxo de Exemplo 
+![Image of Yaktocat](https://www.github.com/efjgrub/rpa-test/Fluxo-Exemplo.png)
+
 # Documentação das APIs de integração
 
 Dados para testes 
