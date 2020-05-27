@@ -15,8 +15,8 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 * Mostrar a soma de debitos também
 
 # Fluxo de Exemplo 
-![Fluxo-Exemplo.png]
-(https://github.com/efjgrub/rpa-test/blob/master/Fluxo-Exemplo.png)
+
+![image alt >](Fluxo-Exemplo.png)
 
 # Documentação das APIs de integração
 
