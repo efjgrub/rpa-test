@@ -15,7 +15,7 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 * Mostrar a soma de debitos também
 
 # Fluxo de Exemplo 
-![Image of Yaktocat](https://www.github.com/efjgrub/rpa-test/Fluxo-Exemplo.png)
+(https://github.com/efjgrub/rpa-test/blob/master/Fluxo-Exemplo.png)
 
 # Documentação das APIs de integração
 
