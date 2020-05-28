@@ -123,4 +123,9 @@ Dados para testes
 // tamanho de Array
 obj = JSON.parse(json);
 Object.size(obj.clients[0].pop_problem_list)
+
+// Pontuando valores
+var numero = 10000;
+
+return (numero.toLocaleString()); 
 ```
