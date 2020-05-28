@@ -94,7 +94,7 @@ Dados para testes
 ```
 # Exemplo do fluxo construído
 
-![image alt >](Fluxo-Exemplo.png)
+![image alt >](Sugestao-De-Fluxo.png)
 
 # Scripts de exemplo
 ```javascript
