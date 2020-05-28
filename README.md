@@ -14,7 +14,7 @@ Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o c
 * Se o cliente estiver com débitos, o sistema mostra a lista de débitos e nega a abertura de chamados.
 * Mostrar a soma de debitos também
 
-# Fluxo de Exemplo 
+# Fluxograma do projeto
 
 ![image alt >](Fluxo-Exemplo.png)
 
@@ -91,4 +91,36 @@ Dados para testes
     "status": "Ticket criado",
     "ticketTitle": "não consigo me logar"
 }
+```
+# Exemplo do fluxo construído
+
+![image alt >](Fluxo-Exemplo.png)
+
+# Scripts de exemplo
+```javascript
+// Iterar com Array 1
+() => {
+    let saldo = 0;
+    data = JSON.parse(VAR_ENTRADA);
+      data.debitos.forEach(el => {
+         saldo = saldo + el.valor;
+      });
+  
+    return saldo;
+  };
+
+// Iterar com Array 2
+() => {
+  var v = JSON.parse(debitos);
+  var val = 0;
+  for (var i = 0; i < v.length; i++){
+    var obj = v[i];
+    val = val + obj['valor'];
+  }
+  return val;
+};
+
+// tamanho de Array
+obj = JSON.parse(json);
+Object.size(obj.clients[0].pop_problem_list)
 ```
