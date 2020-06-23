@@ -44,7 +44,7 @@ Dados para testes
     "Logradouro": "Av. das americas, 2000",
     "Name": "Empresa de modelo 1",
     "cnpj": "99.999.999/0001-99",
-    "deb": [],
+    "pendencias": [],
     "status": "OK"
 }
 ```
@@ -56,7 +56,7 @@ Dados para testes
     "Logradouro": "Av. europa, 1000",
     "Name": "Empresa de modelo 2",
     "cnpj": "99.999.999/0002-99",
-    "deb": [
+    "pendencias": [
         {
             "ano": "2020",
             "mes": "Abril",
@@ -102,7 +102,7 @@ Dados para testes
 () => {
     let saldo = 0;
     data = JSON.parse(VAR_ENTRADA);
-      data.deb.forEach(el => {
+      data.pendencias.forEach(el => {
          saldo = saldo + el.valor;
       });
   
