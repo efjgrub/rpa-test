@@ -44,7 +44,7 @@ Dados para testes
     "Logradouro": "Av. das americas, 2000",
     "Name": "Empresa de modelo 1",
     "cnpj": "99.999.999/0001-99",
-    "debitos": [],
+    "deb": [],
     "status": "OK"
 }
 ```
@@ -56,7 +56,7 @@ Dados para testes
     "Logradouro": "Av. europa, 1000",
     "Name": "Empresa de modelo 2",
     "cnpj": "99.999.999/0002-99",
-    "debitos": [
+    "deb": [
         {
             "ano": "2020",
             "mes": "Abril",
@@ -102,7 +102,7 @@ Dados para testes
 () => {
     let saldo = 0;
     data = JSON.parse(VAR_ENTRADA);
-      data.debitos.forEach(el => {
+      data.deb.forEach(el => {
          saldo = saldo + el.valor;
       });
   
@@ -111,7 +111,7 @@ Dados para testes
 
 // Iterar com Array 2
 () => {
-  var v = JSON.parse(debitos);
+  var v = JSON.parse(pendencias);
   var val = 0;
   for (var i = 0; i < v.length; i++){
     var obj = v[i];

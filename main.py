@@ -46,7 +46,7 @@ def crm():
                     "Logradouro": "Av. das americas, 2000",
                     "Cidade": "Santana",
                     "Estado": "SP",
-                    "debitos": []
+                    "d": []
             }
             return(jsonify(ret))
         elif cnpjin == cnpjerr:
@@ -57,7 +57,7 @@ def crm():
                     "Logradouro": "Av. europa, 1000",
                     "Cidade": "Santa falta de pagamento",
                     "Estado": "SP",
-                    "debitos": [
+                    "d": [
                         {
                             "mes": "Abril",
                             "ano": "2020",
