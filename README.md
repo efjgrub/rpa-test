@@ -144,9 +144,3 @@ var numero = 10000;
 return (numero.toLocaleString()); 
 ```
 
-## Data structures
-
-### Movie
-+ id: 810b43d0-fc0d-4199-8a79-25b471c880bf (string, required)
-+ title: Avengers: Endgame (string, required)
-+ description (string)
