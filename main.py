@@ -43,9 +43,9 @@ def crm():
                     "cnpj": cnpjin,
                     "status": "OK",
                     "Name": "Company sample 1",
-                    "Logradouro": " 767 5th Ave",
-                    "Cidade": "New York",
-                    "Estado": "NY",
+                    "Address": " 767 5th Ave",
+                    "City": "New York",
+                    "Estate": "NY",
                     "d": []
             }
             return(jsonify(ret))
@@ -54,19 +54,19 @@ def crm():
                     "cnpj": cnpjin,
                     "status": "debt",
                     "Name": "Company sample 2",
-                    "Logradouro": " 242 W 41st St",
-                    "Cidade": "New York",
-                    "Estado": "NY",
+                    "Address": " 242 W 41st St",
+                    "City": "New York",
+                    "Estate": "NY",
                     "d": [
                         {
-                            "mes": "April",
-                            "ano": "2020",
-                            "valor": 10000
+                            "mouth": "April",
+                            "year": "2020",
+                            "value": 10000
                         },
                           {
-                            "mes": "January",
-                            "ano": "2020",
-                            "valor": 20000
+                            "mouth": "January",
+                            "year": "2020",
+                            "value": 20000
                         }
                     ]
             }

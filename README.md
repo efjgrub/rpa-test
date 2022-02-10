@@ -41,10 +41,10 @@ Dados para testes
 {
     "cnpj": "99.999.999/0001-99",
     "Name": "Company sample 1",
-    "Logradouro": " 767 5th Ave",
-    "Cidade": "New York",
-    "Estado": "NY",
-    "pendencias": [],
+    "Address": " 767 5th Ave",
+    "City": "New York",
+    "Estate": "NY",
+    "d": [],
     "status": "OK"
 }
 ```
@@ -53,19 +53,19 @@ Dados para testes
 {
     "cnpj": "99.999.999/0002-99",
     "Name": "Company sample 2",
-    "Logradouro": " 242 W 41st St",
-    "Cidade": "New York",
-    "Estado": "NY",
+    "Address": " 242 W 41st St",
+    "City": "New York",
+    "Estate": "NY",
     "d": [
         {
-            "ano": "2020",
-            "mes": "April",
-            "valor": 10000
+            "year": "2020",
+            "mouth": "April",
+            "value": 10000
         },
         {
-            "ano": "2020",
-            "mes": "Janaury",
-            "valor": 20000
+            "year": "2020",
+            "mouth": "Janaury",
+            "value": 20000
         }
     ],
     "status": "debt"
