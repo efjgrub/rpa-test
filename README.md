@@ -1,42 +1,44 @@
-# Fluxo avançado com SZ.Chat
-Esse material é para orientar pessoas a utilizar o módulo de RPA no SZ.Chat a fim de fazer suas próprias integrações e automatizar processos no fluxo do atendimento.
+# Low code flow with SZ.chat
+This material is to guide people to use the RPA module in SZ.Chat in order to make their own integrations and automate processes in the service flow.
 
-# Pré-requisitos
-Toda integração requer a documentação das APIs a serem integradas, sem essas informações não é possível realizar nenhuma integração.
+# Pre req
 
-# Cenário
-Imagine que um cliente queira fazer o seguinte fluxo<br>
+Every integration requires documentation of the APIs to be integrated, without which it is not possible to perform any integration.
 
-Cliente entra no Chat e quer abrir um chamado, porém só é permitido abrir o chamado caso o cliente esteja em dia com seus pagamentos.
+# Scenario
 
-* Consultar no CRM via CNPJ a situação do cliente
-* Se o cliente estiver em dia, ele pode entrar com a abertura do chamado no ServiceDesk
-* Se o cliente estiver com débitos, o sistema mostra a lista de débitos e nega a abertura de chamados.
-* Mostrar a soma de debitos também
+Imagine that a customer wants to do the following flow<br>
 
-# Fluxograma do projeto
+Customer enters the Chat and wants to open a ticket, but it is only allowed to open the ticket if the customer is up to date with his payments.
+
+* Consult the customer's balance in the ERP via ID.
+* If the customer is up to date, he can open the ticket on the ServiceDesk
+* If the customer has debts, the system shows the list of debts and denies opening calls.
+* Show the sum of debts as well
+
+# Picture
 
 ![image alt >](Fluxo-Exemplo.png)
 
-# Documentação das APIs de integração
+# API documentation
 
-Dados para testes 
-* **99.999.999/0001-99** - CNPJ sem débitos
-* **99.999.999/0002-99** - CNPJ com débitos
+Sample data
+* **99.999.999/0001-99** - ID without debts
+* **99.999.999/0002-99** - ID with debts
 * token **tokendeexemplo**
 
-### CRM
+### ERP
 
-**Endpoint de consulta** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/crm/consulta<br>
-**Método** POST<br>
-**Authenticação** token no header<br>
-**Requisição JSON**
+**Endpoint for check balance** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/crm/consulta<br>
+**Method** POST<br>
+**Auth** token in header<br>
+**JSON for sample request**
 ```json
 {
-	"cnpj": "99.999.999/0001-99|OBRIGATORIO"
+	"cnpj": "99.999.999/0001-99|required"
 }
 ```
-**Retorno bem sucedido**
+**Result with no debts**
 ```json
 {
     "cnpj": "99.999.999/0001-99",
@@ -48,7 +50,7 @@ Dados para testes
     "status": "OK"
 }
 ```
-**Retorno mal sucedido**
+**Result with debts**
 ```json
 {
     "cnpj": "99.999.999/0002-99",
@@ -73,40 +75,40 @@ Dados para testes
 ```
 ### SERVICE DESK
 
-**Endpoint de consulta** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
-**Método** POST<br>
-**Authenticação** token no header<br>
-**Requisição JSON**
+**Endpoint for open ticket** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
+**Method** POST<br>
+**Auth** token on header<br>
+**JSON for sample request**
 ```json
 {
-    "cnpj": "99.999.999/0001-99|OBRIGATORIO",
-    "Problem": "OBRIGATORIO"
+    "cnpj": "99.999.999/0001-99|required",
+    "Problem": "required"
 }
 ```
-**Retorno**
+**Result**
 ```json
 {
     "date": "14/05/2020",
     "id": 29008,
-    "status": "Ticket criado",
-    "ticketTitle": "não consigo me logar"
+    "status": "New ticket created",
+    "ticketTitle": "Issue subject"
 }
 ```
-# Exemplo do fluxo construído
+# Sample of flow in bot builder
 
 ![image alt >](Sugestao-De-Fluxo.png)
 
-# Scripts de exemplo
+# Scripts samples
 ```javascript
 // Iterar com Array 1
 () => {
-    let saldo = 0;
-    data = JSON.parse(VAR_ENTRADA);
+    let balance = 0;
+    data = JSON.parse(VAR_INPUT);
       data.pendencias.forEach(el => {
-         saldo = saldo + el.valor;
+         balance = balance + el.value;
       });
   
-    return saldo;
+    return balance;
   };
 
 // Iterar com Array 2
