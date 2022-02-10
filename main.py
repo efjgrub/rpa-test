@@ -42,29 +42,29 @@ def crm():
             ret = {
                     "cnpj": cnpjin,
                     "status": "OK",
-                    "Name": "Empresa de modelo 1",
-                    "Logradouro": "Av. das americas, 2000",
-                    "Cidade": "Santana",
-                    "Estado": "SP",
+                    "Name": "Company sample 1",
+                    "Logradouro": " 767 5th Ave",
+                    "Cidade": "New York",
+                    "Estado": "NY",
                     "d": []
             }
             return(jsonify(ret))
         elif cnpjin == cnpjerr:
             ret = {
                     "cnpj": cnpjin,
-                    "status": "pendente",
-                    "Name": "Empresa de modelo 2",
-                    "Logradouro": "Av. europa, 1000",
-                    "Cidade": "Santa falta de pagamento",
-                    "Estado": "SP",
+                    "status": "debt",
+                    "Name": "Company sample 2",
+                    "Logradouro": " 242 W 41st St",
+                    "Cidade": "New York",
+                    "Estado": "NY",
                     "d": [
                         {
-                            "mes": "Abril",
+                            "mes": "April",
                             "ano": "2020",
                             "valor": 10000
                         },
                           {
-                            "mes": "Janeiro",
+                            "mes": "January",
                             "ano": "2020",
                             "valor": 20000
                         }
@@ -114,7 +114,7 @@ def servicedesk():
             d1 = today.strftime("%d/%m/%Y")
             
             ret = {
-                "status": "Ticket criado",
+                "status": "New ticket created ",
                 "ticketTitle": req_data['Problem'],
                 "id": id,
                 "date": d1

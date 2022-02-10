@@ -27,7 +27,7 @@ Dados para testes
 
 ### CRM
 
-**Endpoint de consulta** https://edison-research.uc.r.appspot.com/sample/crm/consulta<br>
+**Endpoint de consulta** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/crm/consulta<br>
 **Método** POST<br>
 **Authenticação** token no header<br>
 **Requisição JSON**
@@ -39,11 +39,11 @@ Dados para testes
 **Retorno bem sucedido**
 ```json
 {
-    "Cidade": "Santa Fé",
-    "Estado": "SP",
-    "Logradouro": "Av. das americas, 2000",
-    "Name": "Empresa de modelo 1",
     "cnpj": "99.999.999/0001-99",
+    "Name": "Company sample 1",
+    "Logradouro": " 767 5th Ave",
+    "Cidade": "New York",
+    "Estado": "NY",
     "pendencias": [],
     "status": "OK"
 }
@@ -51,29 +51,29 @@ Dados para testes
 **Retorno mal sucedido**
 ```json
 {
-    "Cidade": "Santa falta de pagamento",
-    "Estado": "SP",
-    "Logradouro": "Av. europa, 1000",
-    "Name": "Empresa de modelo 2",
     "cnpj": "99.999.999/0002-99",
-    "pendencias": [
+    "Name": "Company sample 2",
+    "Logradouro": " 242 W 41st St",
+    "Cidade": "New York",
+    "Estado": "NY",
+    "d": [
         {
             "ano": "2020",
-            "mes": "Abril",
+            "mes": "April",
             "valor": 10000
         },
         {
             "ano": "2020",
-            "mes": "Janeiro",
+            "mes": "Janaury",
             "valor": 20000
         }
     ],
-    "status": "pendente"
+    "status": "debt"
 }
 ```
 ### SERVICE DESK
 
-**Endpoint de consulta** https://edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
+**Endpoint de consulta** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
 **Método** POST<br>
 **Authenticação** token no header<br>
 **Requisição JSON**

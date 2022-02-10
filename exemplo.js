@@ -3,7 +3,7 @@
 () => {
     let saldo = 0;
     data = JSON.parse(VAR_ENTRADA);
-      data.debitos.forEach(el => {
+      data.d.forEach(el => {
          saldo = saldo + el.valor;
       });
   
