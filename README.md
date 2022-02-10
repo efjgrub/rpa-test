@@ -30,8 +30,10 @@ Sample data
 ### ERP
 
 **Endpoint for check balance** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/crm/consulta<br>
-**Method** POST<br>
-**Auth** token in header<br>
+**Method** 
+`POST`
+**Auth** 
+`token on header`
 **JSON for sample request**
 ```json
 {
@@ -76,8 +78,10 @@ Sample data
 ### SERVICE DESK
 
 **Endpoint for open ticket** https://learn-rpa-dot-edison-research.uc.r.appspot.com/sample/servicedesk/ticket<br>
-**Method** POST<br>
-**Auth** token on header<br>
+**Method** 
+`POST`
+**Auth** 
+`token on header`
 **JSON for sample request**
 ```json
 {
